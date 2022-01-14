@@ -15,9 +15,8 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '15'
-        env:
-          test_secret: ${{ secrets.test_secret }}
-
       - run: npm install
       - run: node index.js
+        env:
+          test_secret: ${{ secrets.test_secret }}
 
