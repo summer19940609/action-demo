@@ -4,7 +4,7 @@ const time = moment().format('YYYY-MM-DD HH:mm:ss');
 
 const time_08 = moment().utcOffset(8).format('YYYY-MM-DD HH:mm:ss')
 
-const test_secret = process.env('test_secret')
+const test_secret = process.env['test_secret']
 
 console.log('========================================');
 console.log('==========  index.js执行       ==========');
